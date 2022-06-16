@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tthk_graz_app.MainPage"
+             Title="Kontaktid">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="addContactToolbarItem"
+            Text="Lisa"
+            Order="Primary"
+            Priority="0"
+            Clicked="AddContactToolbarItem_OnClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <ListView x:Name="contactsListView" HasUnevenRows="True" ItemTapped="ContactsListView_OnItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <Frame BackgroundColor="{Binding CircleColor}" CornerRadius="100" WidthRequest="15" HeightRequest="15">
+                                <Label Text="{Binding Initials}" FontSize="10" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            </Frame>
+                            <Label Text="{Binding FirstName}" FontSize="20" VerticalTextAlignment="Center" Margin="10,0,0,0"/>
+                            <Label Text="{Binding LastName}" FontSize="20" VerticalTextAlignment="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

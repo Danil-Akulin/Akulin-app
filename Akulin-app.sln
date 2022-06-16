@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tthk-graz-app.Android", "tthk-graz-app.Android\tthk-graz-app.Android.csproj", "{E57CF988-800A-4A93-A136-AA8B40B2CBE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tthk-graz-app", "tthk-graz-app\tthk-graz-app.csproj", "{34D99B4D-0E16-46D3-B888-C57C617AA38E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E57CF988-800A-4A93-A136-AA8B40B2CBE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57CF988-800A-4A93-A136-AA8B40B2CBE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57CF988-800A-4A93-A136-AA8B40B2CBE8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E57CF988-800A-4A93-A136-AA8B40B2CBE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57CF988-800A-4A93-A136-AA8B40B2CBE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E57CF988-800A-4A93-A136-AA8B40B2CBE8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{34D99B4D-0E16-46D3-B888-C57C617AA38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D99B4D-0E16-46D3-B888-C57C617AA38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D99B4D-0E16-46D3-B888-C57C617AA38E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{34D99B4D-0E16-46D3-B888-C57C617AA38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D99B4D-0E16-46D3-B888-C57C617AA38E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D99B4D-0E16-46D3-B888-C57C617AA38E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F932EC4-E192-4F05-A51A-9EB0DC22EE6B}
+	EndGlobalSection
+EndGlobal

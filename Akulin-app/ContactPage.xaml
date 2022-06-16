@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tthk_graz_app.ContactPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            x:Name="DeleteContact"
+            Text="Kustuta"
+            Clicked="DeleteContactMenuItemOnClicked"/>
+        <ToolbarItem x:Name="ChangeContact"
+                     Text="Muuda"
+                     Clicked="ChangeContactMenuItemOnClicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame x:Name="contactInitialsCircle" 
+                   CornerRadius="100" 
+                   HeightRequest="160" 
+                   WidthRequest="100" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   BackgroundColor="DarkOrange"
+                   Margin="5">
+                <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="50" TextColor="White" x:Name="contactInitialsLabel"></Label>
+            </Frame>
+            <Label FontSize="30" HorizontalTextAlignment="Center" x:Name="contactFullNameLabel"/>
+            <ListView HasUnevenRows="True" x:Name="contactDataListView" SelectionMode="None">
+
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

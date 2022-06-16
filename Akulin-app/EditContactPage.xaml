@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tthk_graz_app.EditContactPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            x:Name="saveContactToolbarItem"
+            Text="OK"
+            Order="Primary"
+            Priority="0"
+            Clicked="SaveContactToolbarItem_OnClicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <TableView>
+            <TableSection Title="Põhiandmed">
+                <EntryCell Label="Eesnimi" x:Name="firstNameCell"/>
+                <EntryCell Label="Perekonnanimi" x:Name="lastNameCell"/>
+            </TableSection>
+            <TableSection Title="Kontaktid">
+                <EntryCell Label="E-post" x:Name="emailCell" />
+                <EntryCell Label="Telefoninumber" x:Name="phoneCell"/>
+                <EntryCell Label="Twitter" x:Name="twitterCell"/>
+                <EntryCell Label="VK" x:Name="vkCell"/>
+                <EntryCell Label="Telegram" x:Name="telegramCell"/>
+            </TableSection>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
